@@ -5,12 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acme | Sign Up </title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/fontawesome-free-5.12.1-web/css/all.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/fontawesome-free-5.12.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <section class="sign-up">
-        <form action="#" class="form">
-            
+    <div class="container">
+        <div class="header">
+            <h2>Create Account.</h2>
+        </div>
+        <form action="#" class="form" id="form">
+            <div class="form-control">
+                <label for="user-name">Username</label>
+                <input type="text" id="user-name" placeholder="Enter user name...">
+                <i class="far fa-check-square"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="ninja@gmail.com">
+                <i class="far fa-check-square"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password">
+                <i class="far fa-check-square"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password-check">Confirm-Password</label>
+                <input type="text" id="password-check" placeholder="Confirm password">
+                <i class="far fa-check-square"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
         </form>
-    </section>
+    </div>
+    <script src="./js/validation.js"></script>
 </body>
 </html>

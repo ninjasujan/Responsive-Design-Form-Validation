@@ -1,0 +1,111 @@
+/* variables */
+:root{
+    --primary: #ffc636;
+    --secondary: #0a0b5b;
+}
+
+/* reset */
+body, p, ul, li, a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Rubik Regular';
+}
+
+li{
+    list-style-type: none;
+}
+
+/* base styles */
+body {
+    background: var(--secondary);
+    overflow-x: hidden;
+}
+.button{
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+
+.button:hover {
+    color: #222;
+    background: var(--primary);
+    cursor: pointer;
+}
+
+input, textarea {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: 2px solid #9893d8;
+    color: #f2f2f2;
+    display: block;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url('./assets/fonts/Rubik-Regular.ttf');
+}
+h1, h2, h3, h4 {
+    color: #dddbff;
+    font-weight: normal;
+}
+p, a, li {
+    color: #9893d8;
+}
+h1, h3 {
+    font-size: 1.2em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.1em;
+}
+.leading {
+    font-size: 1.1em;
+}
+
+/* Mobile styles */
+
+/* Small tablet styles */
+@media screen and (min-width: 620px) {
+
+    
+
+}
+
+/* Large tablet and laptops */
+@media screen and (min-width: 960px) {
+    
+    body{
+        font-size: 18px;
+    }
+
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1200px) {
+
+    body{
+        font-size: 20px;
+    }
+
+}
+
+/* Grid testing */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects a {
+    text-align: center;
+    padding: 20px;
+}

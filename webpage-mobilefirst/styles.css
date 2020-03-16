@@ -103,9 +103,21 @@ h4 {
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 }
 
-.projects a {
-    text-align: center;
-    padding: 20px;
+.projects a:nth-child(1) {
+    grid-column: 1/5;
+    grid-row: 1;
 }
+
+.projects a:nth-child(2) {
+    grid-column: 8/12;
+    grid-row: 1;
+}
+
+.projects a:nth-child(3) {
+    grid-column: 5/9;
+    grid-row: 2;
+}
+

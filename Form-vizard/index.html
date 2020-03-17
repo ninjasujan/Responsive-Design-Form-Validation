@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Wizard | Main page</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="info-section">
+        <div class="header">
+            <h2>Enter your personal credentilas</h2>
+            <p>Read the instruction carefully and fill the form</p>
+        </div>
+        <form action="#">
+            <h2>Register users..</h2>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Username...">
+            <label for="password">Enter password</label>
+            <input type="password" name="password" id="password" placeholder="Password...">
+            <label for="confirmpassword" id="name">Confirm Password</label>
+            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm password...">
+        </form>
+        <form action="#">
+            <h2>Enter your personal Info..</h2>
+            <label for="name" id="name">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="Shaun mario">
+            <label for="dob" id="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <label for="gender">Gender</label>
+            <div class="gender">
+                <input type="radio" name="gender" id="male" value="male"><span>Male</span>
+                <input type="radio" name="gender" id="female" value="female"><span>Female</span>
+                <p class="gender-error">Plese select gender</p>
+            </div>
+            <label for="nationality">Nationality</label>
+            <input type="text" name="nationality" id="nationality" placeholder="Nationality..">
+            <label for="address">Permanent Address</label>
+            <textarea name="address" id="address"  rows="5">Address..</textarea>
+        </form>
+        <form action="#">
+            <h2>Enter contact Info..</h2>
+            <label for="email">Enter your Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email..">
+            <label for="phonenumber">Your contact number</label>
+            <input type="number" name="phonenumber" id="phonenumber" placeholder="Contact number..">
+            <label for="insta">Add Instagram account Id</label>
+            <input type="text" name="insta" id="insta" placeholder="Insta..">
+            
+        </form>
+        <form action="#">
+            <h2>Enter Education Info..</h2>
+            <label for="regno">Registration number</label>
+            <input type="text" name="regno" id="regno" placeholder="Registration number">
+            <label for="college">Your college name</label>
+            <input type="text" name="college" id="college" placeholder="College name..">
+            <label for="gpa">Enter your GPA</label>
+            <input type="number" name="gpa" id="gpa" placeholder="GPA">
+            <label for="projects-1">Enter Project Title</label>
+            <input type="text" name="projects-1" id="projects-1" placeholder="Project title">
+            <textarea name="project-desc" placeholder="Add description about projects"></textarea>
+        </form>
+        <section class="navigate">
+            <button id="prev">PREV</button>
+            <button id="next">NEXT</button>
+        </section>
+        <!-- <section class="submit-class">
+            <input type="submit" value="SUBMIT">
+        </section> -->
+        <section class="slider">
+            <span class="1"></span>
+            <span class="2"></span>
+            <span class="3"></span>
+            <span class="4"></span>
+        </section>
+    </section>
+    <script src="./validation.js"></script>
+</body>
+</html>

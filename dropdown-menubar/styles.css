@@ -8,6 +8,11 @@ body {
 }
 
 /* Menu style */
+.menu-content {
+    height: 0;
+    overflow: hidden;
+}
+
 .dropdown-menu {
     background: #fff;
     padding: 20px;
@@ -25,4 +30,25 @@ body {
     padding: 10px;
     text-decoration: none;
     color: #603d7b;
+}
+
+.dropdown-menu label {
+    display: block;
+    cursor: pointer;
+    background: url(img/closed.png) no-repeat left center;
+    background-size: contain;
+    padding: 30px 0 20px 80px;
+}
+
+input#menu {
+    display: none;
+}
+
+/* Toggle effect */
+input[type="checkbox"]:checked ~ label {
+    background: url(img/open.png) no-repeat left center;
+}
+
+input:checked ~ .menu-content {
+    height: auto;
 }

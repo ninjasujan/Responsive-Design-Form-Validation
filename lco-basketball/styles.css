@@ -34,7 +34,7 @@ header .branding img {
     width: 170px;
     height: 100px;
     padding: 0;
-    margin: 0 0 -13px 0;
+    margin: 0 0 -16px 0;
 }
 
 .branding p {
@@ -63,6 +63,8 @@ nav ul li a:hover {
     font-weight: 800;
 }
 
+
+
 section.show-case {
     text-align: center;
     margin-top: 30px;
@@ -72,5 +74,46 @@ section.show-case {
 section .banner img {
     width: 60%;
     border-radius: 50%;
+}
+
+.content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content .wrapper img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.content .wrapper-content p {
+    font-size: 1.4em;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer h3 {
+    padding-top: 10px;
+}
+
+footer p {
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 840px) {
+    header, section {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .content .wrapper img, section .banner img {
+        width: 50%;
+    }
 }
 
